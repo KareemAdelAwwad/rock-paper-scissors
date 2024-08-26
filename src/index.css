@@ -16,11 +16,7 @@
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1.5px;
-    background: rgb(46, 54, 96);
-    background: linear-gradient(
-      270deg,
-      rgba(46, 54, 96, 1) 0%,
-      rgba(14, 28, 75, 1) 100%
-    );
+    background: rgb(46,54,96);
+    background: radial-gradient(circle, rgba(46,54,96,1) 0%, rgba(0,13,59,1) 100%);
   }
 }

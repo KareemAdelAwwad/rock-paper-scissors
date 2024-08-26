@@ -1,3 +1,5 @@
+import CloseIcon from '../../public/assets/icon-close.svg'
+import rulesImg from '../../public/assets/image-rules.svg'
 
 const POPup = ({ hidden, clickHandler }: { hidden: boolean, clickHandler: any }) => {
 
@@ -9,14 +11,14 @@ const POPup = ({ hidden, clickHandler }: { hidden: boolean, clickHandler: any })
             Rules
           </h3>
           <button className="hidden sm:block" onClick={clickHandler}>
-            <img src="../../public/assets/icon-close.svg" alt="close" width={28} />
+            <img src={CloseIcon} alt="close" width={28} />
           </button>
         </div>
         <div className="">
-          <img src="../../public/assets/image-rules.svg" alt="rules" width={420} />
+          <img src={rulesImg} alt="rules" width={420} />
         </div>
         <button className="max-sm:block sm:hidden" onClick={clickHandler}>
-          <img src="../../public/assets/icon-close.svg" alt="close" width={28} />
+          <img src={CloseIcon} alt="close" width={28} />
         </button>
       </div>
     </div>

@@ -50,6 +50,7 @@ const PlayGround = ({ userChoice, setUserChoice, score, setScore }: { userChoice
           }
         </h1>
         <Button title="Play Again" className="mt-5" clickEvent={() => {
+          (score === 5 || score === -5) && setScore(0)
           setUserChoice(null)
           
         }} />
