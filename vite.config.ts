@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
  
 export default defineConfig({
   plugins: [react()],
-  base: "./",
+  base: "/rock-paper-scissors/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
