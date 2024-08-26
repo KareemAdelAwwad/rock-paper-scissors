@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+  }
+  body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    background: rgb(46, 54, 96);
+    background: linear-gradient(
+      270deg,
+      rgba(46, 54, 96, 1) 0%,
+      rgba(14, 28, 75, 1) 100%
+    );
+  }
+}
