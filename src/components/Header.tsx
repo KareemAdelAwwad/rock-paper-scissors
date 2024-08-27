@@ -7,11 +7,11 @@ const Header = ({ score }: { score: number }) => {
     <header className="relative md:h-[10rem] h-[5rem] w-[80%] border border-header rounded-2xl flex items-center justify-between md:px-4 px-1  py-6 overflow-hidden">
       <img src={Logo} alt="rock paper scissors" className="md:w-[180px] w-[70px]" />
       <p className="lg:text-xl md:text-lg text-sm text-gray-200">
-        {score === 5 ? (
+        {score >= 5 ? (
           <video autoPlay loop muted className="md:h-[160px] h-[100px]">
             <source src={WonVideo} type="video/mp4" />
           </video>
-        ) : score === -5 ? (
+        ) : score <= -5 ? (
           <img src={LostGif} alt="lost" className="md:h-[160px] h-[100px]" />
         ) : "Try to reach 5 Points"}
       </p>
