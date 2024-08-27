@@ -46,7 +46,7 @@ function App() {
 
   let [userChoice, setUserChoice] = useState<number | null>(null)
   return (
-    <section className="uppercase w-[100vw] h-[100vh] flex flex-col items-center justify-center overflow-clip">
+    <section className="uppercase w-[100vw] h-[100svh] flex flex-col items-center justify-center overflow-clip">
       <div className="h-full md:w-[60vw] w-[100vw] flex flex-col items-center justify-evenly">
         <Header score={score} />
         {

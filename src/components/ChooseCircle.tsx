@@ -9,13 +9,13 @@ enum Type {
 }
 
 const ChooseCircle = ({ CircleType, className, clickEvent }: { CircleType: any, className?: string, clickEvent?:any }) => {
-  const parentClass = 'md:w-[11rem] md:h-[11rem] w-[8rem] h-[8rem] rounded-full flex items-center justify-center border-b-8 border-t-8 border-t-transparent border-opacity-30 border-dark';
-  const defaultClass = 'group md:w-[9rem] md:h-[9rem] w-[6rem] h-[6rem] bg-white rounded-full border-t-8 border-opacity-25 border-dark flex items-center justify-center';
-  const imgClass = 'group-hover:rotate-[25deg] absolute transition-transform duration-300 ease-in-out';
+  const parentClass = 'z-100 md:w-[11.5rem] md:h-[11.5rem] w-[8rem] h-[8rem] rounded-full flex items-center justify-center border-b-8 border-t-8 border-t-transparent border-opacity-30 border-dark';
+  const defaultClass = 'group z-100 md:w-[9rem] md:h-[9rem] w-[6rem] h-[6rem] bg-white rounded-full border-t-8 border-opacity-25 border-dark flex items-center justify-center';
+  const imgClass = 'group-hover:rotate-[25deg] z-100 absolute transition-transform duration-300 ease-in-out';
   
 
   return (
-    <div className={`${className || ''} z-10 cursor-pointer`}>
+    <div className={`${className || ''} z-20 cursor-pointer`}>
       {
         CircleType === Type.Rock ? (
           <div className={`${parentClass} bg-red-500`} onClick={clickEvent}>
